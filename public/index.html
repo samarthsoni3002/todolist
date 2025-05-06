@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      #task-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      #task-list li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      #task-list li.completed {
+        text-decoration: line-through;
+        background-color: #d3f9d8;
+      }
+      button {
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      button:hover {
+        background-color: #ff4b40;
+      }
+      input {
+        padding: 10px;
+        width: 80%;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="controls">
+      <input type="text" id="task-input" placeholder="Enter new task" />
+      <button id="add-btn">Add Task</button>
+    </div>
+    <div class="controls">
+      <button id="previous-btn">Previous Tasks</button>
+    </div>
+    <ul id="task-list"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
